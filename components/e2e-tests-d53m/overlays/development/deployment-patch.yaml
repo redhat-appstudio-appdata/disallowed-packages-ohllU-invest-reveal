@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: e2e-tests-d53m
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/qe-chuo-tenant/disallowed-packages/e2e-tests-d53m@sha256:06c53abc632ce2f545f0f5f5a418115762e1db9dcccf1c2de0d8ac8bd83bff0d
+        name: container-image
+        resources: {}
+status: {}
